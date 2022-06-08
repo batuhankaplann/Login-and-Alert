@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uyarı_Mesajları" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KAYIT ALANI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMd-co-BSj">
+                                <rect key="frame" x="98" y="96" width="217" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-Af-9VO">
+                                <rect key="frame" x="91" y="171" width="233" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-WI-ERT">
+                                <rect key="frame" x="91" y="226" width="233" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreyi Tekrar Ediniz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pv9-Pg-WBK">
+                                <rect key="frame" x="91" y="280" width="233" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zq-Wl-fPM">
+                                <rect key="frame" x="146" y="394" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Et"/>
+                                <connections>
+                                    <action selector="Kaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJu-0R-NQ5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vMd-co-BSj" firstAttribute="centerX" secondItem="5Zq-Wl-fPM" secondAttribute="centerX" id="7F5-E1-Vjb"/>
+                            <constraint firstItem="vMd-co-BSj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="DKb-La-00L"/>
+                            <constraint firstItem="n2Q-Af-9VO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="HrE-Iz-jqW"/>
+                            <constraint firstItem="5Zq-Wl-fPM" firstAttribute="top" secondItem="Pv9-Pg-WBK" secondAttribute="bottom" constant="80" id="Kod-na-Hur"/>
+                            <constraint firstItem="5cU-WI-ERT" firstAttribute="leading" secondItem="Pv9-Pg-WBK" secondAttribute="leading" id="Rty-wY-zol"/>
+                            <constraint firstItem="vMd-co-BSj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="Unp-wY-9g0"/>
+                            <constraint firstItem="5cU-WI-ERT" firstAttribute="trailing" secondItem="Pv9-Pg-WBK" secondAttribute="trailing" id="Wc9-qp-m6i"/>
+                            <constraint firstItem="5cU-WI-ERT" firstAttribute="top" secondItem="n2Q-Af-9VO" secondAttribute="bottom" constant="21" id="aGv-GC-ECz"/>
+                            <constraint firstItem="n2Q-Af-9VO" firstAttribute="top" secondItem="vMd-co-BSj" secondAttribute="bottom" constant="54" id="en5-ny-kzX"/>
+                            <constraint firstItem="Pv9-Pg-WBK" firstAttribute="top" secondItem="5cU-WI-ERT" secondAttribute="bottom" constant="20" id="fZH-pR-vWQ"/>
+                            <constraint firstItem="Pv9-Pg-WBK" firstAttribute="centerX" secondItem="5Zq-Wl-fPM" secondAttribute="centerX" id="fys-u7-WQv"/>
+                            <constraint firstItem="5Zq-Wl-fPM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="hnT-Ls-0C5"/>
+                            <constraint firstItem="n2Q-Af-9VO" firstAttribute="leading" secondItem="5cU-WI-ERT" secondAttribute="leading" id="hq0-jS-dq1"/>
+                            <constraint firstItem="n2Q-Af-9VO" firstAttribute="trailing" secondItem="5cU-WI-ERT" secondAttribute="trailing" id="kCO-Oc-TMB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="İsimTextField" destination="n2Q-Af-9VO" id="Vlr-xb-YXr"/>
+                        <outlet property="ŞifreTextFied2" destination="Pv9-Pg-WBK" id="nXi-xf-IVn"/>
+                        <outlet property="ŞifreTextField" destination="5cU-WI-ERT" id="5cq-uW-KVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
